@@ -1,0 +1,35 @@
+Summary of Audio aura characterization:
+
+For a listener's top 100 songs from 2018, the calculated "Audio Audra" is as follows:
+
+Energy      : 0.65906  -> This suggests the liner enojoys music with a lively and upbeat nature.
+Valence     : 0.484443 -> The mood of the music is fairly balanced, with neither strong positivity nor negativity.
+Danceability: 0.71646  -> The liner favors songs that are quite suitable for dancing, indicating a preference for rhythmic and energetic tracks.
+
+Limitations:
+
+1. Scope of Data        :  Relying on just the top 100 songs may not fully capture the listener's broader musical tastes or less frequently played favorites.
+2. Contextual Factors   :  The analysis doesn’t account for the context in which songs are listened to, such as whether they’re for relaxation, workouts, or social events.
+3. Variability Over Time:  Music preferences can change throughout the year, and the top 100 songs might not reflect shifts in mood or genre preference.
+
+Improved Approaches:
+
+1. Broader Dataset     :   Use a larger sample of songs beyond the top 100 to capture a more comprehensive picture of the listener’s preferences.
+2. Contextual Insights :   Incorporate data about listening contexts, such as playlists or times of day, to better understand the mood and energy associated with different scenarios.
+3. Frequency Weighting :   Adjust the aura calculation to give more weight to frequently listened-to songs, reflecting the listener’s more consistent preferences.
+4. Temporal Analysis   :   Examine changes in audio aura over different periods of the year to identify evolving musical tastes and mood shifts.
+
+The Query I used to view the acquired data was:
+
+SELECT
+    AVG(energy) AS average_energy,
+    AVG(valence) AS average_valence,
+    AVG(danceability) AS average_danceability
+FROM songs
+LIMIT 100; -- Ensure we're only considering the top 100 songs.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+
+
+Thank you CS50 :)
