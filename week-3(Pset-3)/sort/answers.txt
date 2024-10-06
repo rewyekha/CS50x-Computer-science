@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: It performed the fastest on a pre-sorted list, which is characteristic of Bubble Sort's best-case scenario where it can finish in linear time.
+
+sort2 uses: Merge sort
+
+How do you know?: It excelled with random/unsorted lists, reflecting Merge Sort's efficient performance on diverse data sets with consistent 𝑂(𝑛 log 𝑛) time complexity.
+
+sort3 uses: Selection sort
+
+How do you know?: It was the only algorithm left after identifying the others, as Selection Sort is known for its simplicity and consistent but less efficient 𝑂(𝑛2)O(n2) performance.
